@@ -36,6 +36,32 @@ print("\nFruits with index:")
 for i in range(len(fruits)):
     print(f"{i}: {fruits[i]}")
 
+# List Comprehensions - A concise way to create lists
+print("\n=== List Comprehensions ===")
+
+# Traditional way
+squares = []
+for x in range(1, 6):
+    squares.append(x ** 2)
+print("Squares (traditional):", squares)
+
+# List comprehension way - more concise!
+squares = [x ** 2 for x in range(1, 6)]
+print("Squares (comprehension):", squares)
+
+# With condition
+even_numbers = [x for x in range(1, 11) if x % 2 == 0]
+print("Even numbers:", even_numbers)
+
+# Transform strings
+names = ["alice", "bob", "charlie"]
+uppercase_names = [name.upper() for name in names]
+print("Uppercase names:", uppercase_names)
+
+# More examples
+doubled = [x * 2 for x in [1, 2, 3, 4, 5]]
+print("Doubled:", doubled)
+
 # TODO: Create a list of numbers from 1 to 10
-# TODO: Print only the even numbers (hint: use if inside the loop)
-# TODO: Create a list of names and sort them alphabetically
+# TODO: Use list comprehension to create a list of only odd numbers from 1 to 20
+# TODO: Create a list of names and use comprehension to get names longer than 4 letters

@@ -2,32 +2,35 @@
 # Run: python3 week7-functions/01_functions_basics.py
 
 # Basic function
-def greet():
+def greet() -> None:
     print("Hello, World!")
 
 greet()  # Call the function
 
-# Function with parameters
-def greet_person(name):
+# Function with parameters and type hints
+def greet_person(name: str) -> None:
     print(f"Hello, {name}!")
 
 greet_person("Alice")
 greet_person("Bob")
 
-# Function with multiple parameters
-def add_numbers(a, b):
+# Function with multiple parameters and type hints
+def add_numbers(a: int, b: int) -> None:
     result = a + b
     print(f"{a} + {b} = {result}")
 
 add_numbers(5, 3)
 add_numbers(10, 20)
 
-# Function with return value
-def multiply(a, b):
+# Function with return value and type hints
+def multiply(a: int, b: int) -> int:
     return a * b
 
 result = multiply(4, 5)
 print("Result:", result)
+
+# Type hints help document what types a function expects
+# Format: def function_name(param: type) -> return_type:
 
 # Using return value in expressions
 total = multiply(3, 4) + multiply(2, 5)
