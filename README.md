@@ -1,145 +1,211 @@
 # Python Learning Course
 
-A structured, beginner-friendly Python course with 10 weeks of hands-on exercises. Learn Python fundamentals through practical examples and mini projects.
+A structured, hands-on Python course for beginners. Learn Python through 15 weeks of progressive exercises, from basics to advanced topics including OOP, testing, and external libraries.
 
-## Overview
+## Prerequisites
 
-This course teaches Python from the ground up using a learn-by-doing approach. Each week introduces new concepts with working code examples, followed by exercises to reinforce learning.
-
-**Course Duration:** 10 weeks  
-**Prerequisites:** None - designed for complete beginners  
-**Approach:** Self-paced, hands-on learning
-
-## What You'll Learn
-
-| Weeks | Topics | Skills |
-|-------|--------|--------|
-| 1-2 | **Basics** | Variables, data types, strings, numbers, user input |
-| 3-4 | **Control Flow** | If/else statements, comparisons, for/while loops |
-| 5-6 | **Data Structures** | Lists, dictionaries, operations on collections |
-| 7-8 | **Functions** | Creating functions, parameters, returns, advanced concepts |
-| 9-10 | **File I/O** | Reading/writing files, working with CSV and JSON |
+- No prior programming experience required
+- Basic computer literacy (file management, text editing)
+- Willingness to experiment and learn from mistakes
 
 ## Getting Started
 
-### 1. Setup Python
+### Option 1: Using Gitpod (Recommended)
+1. Click the Gitpod button or open this repository in Gitpod
+2. Wait for the environment to build (installs Python automatically)
+3. Navigate to `python-practice/` directory
+4. Start with `week1-basics/01_variables.py`
 
-This course requires Python 3. Check if it's installed:
+### Option 2: Local Setup
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/GMorcosEE/python-learning-course.git
+   cd python-learning-course
+   ```
 
-```bash
-python3 --version
-```
+2. Ensure Python 3.11+ is installed:
+   ```bash
+   python3 --version
+   ```
 
-If not installed:
+3. Create a virtual environment:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-```bash
-sudo apt-get update && sudo apt-get install -y python3
-```
+4. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### 2. Clone the Repository
-
-```bash
-git clone https://github.com/GMorcosEE/python-learning-course.git
-cd python-learning-course
-```
-
-### 3. Start Learning
-
-Navigate to the exercises folder and begin with week 1:
-
-```bash
-cd python-practice
-python3 week1-basics/01_variables.py
-```
+5. Start learning:
+   ```bash
+   cd python-practice
+   python3 week1-basics/01_variables.py
+   ```
 
 ## Course Structure
 
+### Weeks 1-2: Python Basics
+- Variables and data types
+- String and number operations
+- User input and output
+- Basic calculations
+
+### Weeks 3-4: Control Flow
+- If/elif/else statements
+- Comparison and logical operators
+- For and while loops
+- Loop control (break, continue)
+
+### Weeks 5-6: Data Structures
+- Lists (creation, manipulation, methods)
+- Dictionaries (key-value pairs)
+- List comprehensions
+- Nested data structures
+
+### Weeks 7-8: Functions
+- Function definition and calling
+- Parameters and return values
+- Variable arguments (*args, **kwargs)
+- Lambda functions
+- Type hints
+
+### Weeks 9-10: File Operations
+- Reading and writing text files
+- Working with CSV files
+- JSON data handling
+- File system operations
+
+### Weeks 11-12: Object-Oriented Programming
+- Classes and objects
+- Methods and attributes
+- Inheritance and polymorphism
+- Magic methods and properties
+- Encapsulation
+
+### Week 13: Error Handling
+- Try/except blocks
+- Exception types
+- Custom exceptions
+- Context managers
+- Defensive programming
+
+### Week 14: Testing
+- Unit testing with unittest/pytest
+- Test-driven development (TDD)
+- Assertions and test cases
+- Mocking and fixtures
+
+### Week 15: External Libraries
+- HTTP requests with requests library
+- Data analysis with pandas
+- Working with APIs
+- Data manipulation
+
+## How to Use This Course
+
+1. **Follow the order** - Each week builds on previous concepts
+2. **Read the comments** - Every file has explanations
+3. **Run the code** - Execute files to see output
+4. **Complete TODOs** - Practice exercises reinforce learning
+5. **Experiment** - Modify code and observe changes
+6. **Build projects** - Each week ends with a mini project
+
+## Running Exercises
+
+```bash
+# Navigate to python-practice directory
+cd python-practice
+
+# Run any exercise file
+python3 week1-basics/01_variables.py
+
+# Run mini projects
+python3 week5-data-structures/03_shopping_list.py
 ```
-python-learning-course/
-├── python-practice/
-│   ├── README.md           # Detailed instructions
-│   ├── PROGRESS.md         # Track your progress
-│   ├── week1-basics/       # Variables, data types
-│   ├── week2-basics/       # Strings, numbers
-│   ├── week3-control-flow/ # If statements
-│   ├── week4-control-flow/ # Loops
-│   ├── week5-data-structures/ # Lists
-│   ├── week6-data-structures/ # Dictionaries
-│   ├── week7-functions/    # Function basics
-│   ├── week8-functions/    # Advanced functions
-│   ├── week9-files/        # File reading/writing
-│   └── week10-files/       # CSV and JSON
+
+## Progress Tracking
+
+Track your progress in `python-practice/PROGRESS.md`. Check off completed exercises and update your stats.
+
+## Mini Projects
+
+Each week includes a practical mini project:
+- **Week 3:** Number guessing game
+- **Week 4:** Multiplication table generator
+- **Week 5:** Shopping list manager
+- **Week 6:** Phonebook application
+- **Week 7:** Calculator with functions
+- **Week 8:** Text analyzer
+- **Week 9:** Note-taking app
+- **Week 10:** Contact manager with JSON
+- **Week 11:** Bank account system (OOP)
+- **Week 12:** Game character system (OOP)
+- **Week 13:** Robust file processor
+- **Week 14:** Tested calculator
+- **Week 15:** Weather data analyzer
+
+## Testing Your Code
+
+Run tests for mini projects:
+```bash
+# Run all tests
+pytest python-practice/tests/
+
+# Run specific test file
+pytest python-practice/tests/test_calculator.py
+
+# Run with verbose output
+pytest -v
 ```
 
-### Weekly Pattern
+## Troubleshooting
 
-Each week follows a consistent structure:
-- **File 1** (`01_*.py`) - Core concept with examples
-- **File 2** (`02_*.py`) - Additional practice
-- **File 3** (`03_*.py`) - Mini project
+### Python not found
+- Ensure Python 3.11+ is installed: `python3 --version`
+- Check PATH environment variable includes Python
 
-## Learning Workflow
+### Module not found
+- Activate virtual environment: `source venv/bin/activate`
+- Install dependencies: `pip install -r requirements.txt`
 
-1. **Read** the comments in each `.py` file
-2. **Run** the file to see the examples in action
-3. **Experiment** by modifying values and code
-4. **Complete** the TODO exercises at the end
-5. **Track** your progress in `PROGRESS.md`
-6. **Move** to the next file when ready
+### Permission denied
+- On Unix/Linux: `chmod +x script.py`
+- Or run with: `python3 script.py`
 
-## Projects You'll Build
+### Import errors
+- Ensure you're in the correct directory
+- Check file names match import statements
 
-By completing this course, you'll create:
+## Learning Tips
 
-- ✅ Number guessing game
-- ✅ Shopping list manager
-- ✅ Phonebook application
-- ✅ Calculator with functions
-- ✅ Text analyzer
-- ✅ Note-taking app
-- ✅ Contact manager with JSON storage
+- **Don't rush** - Understanding beats speed
+- **Read error messages** - They explain what went wrong
+- **Use print()** - Debug by printing variable values
+- **Google errors** - You're not the first to encounter them
+- **Take breaks** - Learning requires rest
+- **Review regularly** - Revisit earlier weeks
 
-## Key Features
+## Additional Resources
 
-- **No external dependencies** - Uses only Python standard library
-- **Self-contained exercises** - Each file runs independently
-- **Progressive difficulty** - Builds on previous concepts
-- **Practical projects** - Apply learning to real applications
-- **Beginner-friendly** - Clear explanations and examples
-
-## Tips for Success
-
-- **Don't rush** - Understanding matters more than speed
-- **Run frequently** - Execute code after every change
-- **Read errors** - Error messages guide you to solutions
-- **Experiment** - Breaking things is part of learning
-- **Practice daily** - Consistency builds skills
-
-## Documentation
-
-- **[python-practice/README.md](python-practice/README.md)** - Detailed usage instructions
-- **[python-practice/PROGRESS.md](python-practice/PROGRESS.md)** - Progress tracking template
+- [Official Python Documentation](https://docs.python.org/3/)
+- [Python Style Guide (PEP 8)](https://pep8.org/)
+- [Real Python Tutorials](https://realpython.com/)
+- [Python Tutor (Visualize Code)](https://pythontutor.com/)
 
 ## Contributing
 
-Contributions are welcome! If you find issues or have suggestions:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+Found a bug or have a suggestion? Feel free to:
+1. Open an issue
+2. Submit a pull request
+3. Share your completed projects
 
 ## License
 
-This project is open source and available for educational purposes.
-
-## Support
-
-If you encounter issues or have questions:
-- Check the README files in each directory
-- Review the comments in the exercise files
-- Experiment with the code to understand behavior
+This course is open source and available for educational purposes.
 
 ---
 
-**Happy Learning!** 🐍
+**Ready to start?** Head to `python-practice/week1-basics/01_variables.py` and begin your Python journey!

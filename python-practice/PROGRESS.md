@@ -148,22 +148,104 @@ Track your progress as you work through the exercises!
 4. **Take breaks** - Learning takes time
 5. **Review** - Go back to earlier exercises if needed
 
+---
+
+## 📝 Week 11: Object-Oriented Programming - Basics
+- [ ] Classes and objects
+- [ ] Methods and attributes
+- [ ] Inheritance
+- [ ] Mini project: Bank account system
+
+**Files to complete:**
+1. `week11-oop/01_classes_basics.py`
+2. `week11-oop/02_inheritance.py`
+3. `week11-oop/03_bank_account.py`
+
+**Goal:** Understand OOP fundamentals and create reusable classes.
+
+---
+
+## 📝 Week 12: Object-Oriented Programming - Advanced
+- [ ] Magic methods (__str__, __add__, etc.)
+- [ ] Properties and encapsulation
+- [ ] Polymorphism
+- [ ] Mini project: Game character system
+
+**Files to complete:**
+1. `week12-oop-advanced/01_magic_methods.py`
+2. `week12-oop-advanced/02_properties_encapsulation.py`
+3. `week12-oop-advanced/03_game_characters.py`
+
+**Goal:** Master advanced OOP concepts and design patterns.
+
+---
+
+## 📝 Week 13: Error Handling
+- [ ] Try/except blocks
+- [ ] Exception types
+- [ ] Custom exceptions
+- [ ] Mini project: Robust file processor
+
+**Files to complete:**
+1. `week13-error-handling/01_exceptions_basics.py`
+2. `week13-error-handling/02_custom_exceptions.py`
+3. `week13-error-handling/03_robust_file_processor.py`
+
+**Goal:** Write defensive code that handles errors gracefully.
+
+---
+
+## 📝 Week 14: Testing
+- [ ] unittest basics
+- [ ] pytest framework
+- [ ] Test-driven development
+- [ ] Mini project: Tested calculator
+
+**Files to complete:**
+1. `week14-testing/01_unittest_basics.py`
+2. `week14-testing/02_pytest_basics.py`
+3. `week14-testing/03_tested_calculator.py`
+
+**Goal:** Learn to write tests and ensure code quality.
+
+---
+
+## 📝 Week 15: External Libraries
+- [ ] HTTP requests with requests library
+- [ ] Data analysis with pandas
+- [ ] Working with APIs
+- [ ] Mini project: Weather data analyzer
+
+**Files to complete:**
+1. `week15-libraries/01_requests_basics.py`
+2. `week15-libraries/02_pandas_basics.py`
+3. `week15-libraries/03_weather_analyzer.py`
+
+**Goal:** Use external libraries to build real-world applications.
+
+---
+
 ## 📊 Your Stats
 
-- **Weeks completed:** 1 / 10
+- **Weeks completed:** 1 / 15
 - **Current week:** 2
-- **Next milestone:** Complete Week 4 (control flow)
-- **Total exercises:** 30 (3 per week)
+- **Next milestone:** Complete Week 5 (data structures)
+- **Total exercises:** 45 (3 per week)
 
 ## 🎓 What You'll Build
 
-By the end of Week 10, you'll have built:
+By the end of Week 15, you'll have built:
 - Shopping list manager
 - Phonebook app
-- Calculator
+- Calculator with functions
 - Text analyzer
 - Note taking app
 - Contact manager with JSON storage
+- Bank account system (OOP)
+- Game character system (OOP)
+- Robust file processor with error handling
+- Tested calculator with full test suite
+- Weather data analyzer with APIs
 
 ---
 
